@@ -32,11 +32,10 @@ html标签语义化：
 例如:
 
 CODE:
-        ><h1>文档标题</h1>
-        ><h2>次级标题</h2>
-
+        <h1>文档标题</h1>
+        <h2>次级标题</h2>
 而不要使用
-        <div class="title">文档标题</div>，或者<span class="title">文档标题</span>.   
+        <div class="title">文档标题</div>，或者<span class="title">文档标题</span>.
         很明显搜索引擎对于后者是不会认为他是标题的。
 <p>
 ------------------------
@@ -57,21 +56,21 @@ dl就是“定义列表”。比如说词典里面的词的解释、定义就可
 例如：
 CODE:
         <dl>        
-            <dt>Dog</dt>        
-            <dd>A carnivorous mammal of the family Canidae.</dd>        
+        <dt>Dog</dt>        
+        <dd>A carnivorous mammal of the family Canidae.</dd>        
         </dl>
 CODE:
         <dl>
-            <dt>上海滩</dt>            
-            <dd>
-                这部拍摄于1980年的《上海滩》堪称是香港电视史上最成功、最经典的剧集。            
-                当年在香港播出以后，产生了巨大的轰动效应。
-            </dd>            
-            <dt>周润发</dt>            
-            <dd>
-                和所有伟大的影星一样，周润发印证了一个时代，一个香港电影的黄金时代。            
-                风衣墨镜、冷血双枪、阳光微笑，都封存胶片之中，当我们回首寻望的时候，发哥已被刻为一个时代的坐标。
-            </dd>
+        <dt>上海滩</dt>            
+        <dd>
+        这部拍摄于1980年的《上海滩》堪称是香港电视史上最成功、最经典的剧集。            
+        当年在香港播出以后，产生了巨大的轰动效应。
+        </dd>            
+        <dt>周润发</dt>            
+        <dd>
+        和所有伟大的影星一样，周润发印证了一个时代，一个香港电影的黄金时代。            
+        风衣墨镜、冷血双枪、阳光微笑，都封存胶片之中，当我们回首寻望的时候，发哥已被刻为一个时代的坐标。
+        </dd>
         </dl>
 
 <cite>、cite 、<q>、 <blockquote>
@@ -94,13 +93,13 @@ CODE:
         <p> <cite>孔子</cite>曰：<q>学而不思则罔，思而不学则殆</q>.</p>
 
 CODE:
-        <p>The W3C says that <q cite="http://www.w3.org/TR/REC-html40/        
-        struct/text.html#h-9.2.1">The presentation of phrase elements        
+        <p>The W3C says that <q cite="http://www.w3.org/TR/REC-html40/ \<br>      
+        struct/text.html#h-9.2.1">The presentation of phrase elements  \<br>         
         depends on the user agent.</q>.</p>        
 
 CODE:
         <blockquote cite="http://www.w3cn.org/">        
-            <p>&#8220;我们大部分人都有深刻体验，每当主流浏览器版本的升级，我们刚建立的网站就可能变得过时，
+        <p>&#8220;我们大部分人都有深刻体验，每当主流浏览器版本的升级，我们刚建立的网站就可能变得过时，   
         我们就需要升级或者重新建造一遍网站。例如1996-1999年典型的"浏览器大战"，        
         为了兼容 Netscape 和 IE，网站不得不为这两种浏览器写不同的代码。同样的，
         每当新的网络技术和交互设备的出现，我们也需要制作一个新版本来支持这种新技术或新设备，
@@ -156,10 +155,10 @@ header 元素代表“网页”或“section”的页眉。
 者任何相关logo。
 整个页面没有限制header元素的个数，可以拥有多个，可以为每个内容块增加一个header元素
         <header>
-            <hgroup>
-                <h1>网站标题</h1>
-                <h1>网站副标题</h1>
-            </hgroup>
+        <hgroup>
+        <h1>网站标题</h1>
+        <h1>网站副标题</h1>
+        </hgroup>
         </header>
 header使用注意：
 可以是“网页”或任意“section”的头部部分；
@@ -171,7 +170,7 @@ footer元素代表“网页”或“section”的页脚，通常含有该节的�
 er元素包含了整个节，那么它们就代表附录，索引，提拔，许可协议，标签，类别等一些其他类似信息。
 footer的示例代码
         <footer>
-            COPYRIGHT@小北
+        COPYRIGHT@小北
         </footer>
 footer使用注意：
 -----------------------
@@ -183,8 +182,8 @@ hgroup元素代表“网页”或“section”的标题，当元素有多个层�
 标题的组合
 hgroup示例代码
         <hgroup>
-            <h1>这是一篇介绍HTML 5语义化标签和更简洁的结构</h1>
-            <h2>HTML 5</h2>
+        <h1>这是一篇介绍HTML 5语义化标签和更简洁的结构</h1>
+        <h2>HTML 5</h2>
         </hgroup>
 hgroup使用注意：
 ------------------------
@@ -196,11 +195,11 @@ nav元素
 nav元素代表页面的导航链接区域。用于定义页面的主要导航部分。
 nav实例：
         <nav>
-            <ul>
-                <li>HTML 5</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-            </ul>
+        <ul>
+        <li>HTML 5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        </ul>
         </nav>
 但是我在有些时候却情不自禁的想用它，譬如：侧边栏上目录，面包屑导航，搜索样式，或者下一篇上一篇文章，但是事实上
 规范上说nav只能用在页面主要导航部分上。页脚区域中的链接列表，虽然指向不同网站的不同区域，譬如服务条款，版权页等
@@ -216,11 +215,11 @@ aside元素被包含在article元素中作为主要内容的附属信息部分�
 ，甚至广告，这些内容相关的页面。
 aside实例：
         <article>
-            <p>内容</p>
-            <aside>
-                <h1>作者简介</h1>
-                <p>小北，前端一枚</p>
-            </aside>
+        <p>内容</p>
+        <aside>
+        <h1>作者简介</h1>
+        <p>小北，前端一枚</p>
+        </aside>
         </article>
 aside使用总结：
 ------------------------
@@ -234,15 +233,15 @@ section元素代表文档中的“节”或“段”，“段”可以是指一�
 section通常还带标题，虽然html5中section会自动给标题h1-h6降级，但是最好手动给他们降级。如下：
 section示例代码：
         <section>
-            <h1>section是啥？</h1>
-            <article>
-                <h2>关于section</h1>
-                <p>section的介绍</p>
-                <section>
-                    <h3>关于其他</h3>
-                    <p>关于其他section的介绍</p>
-                </section>
-            </article>
+        <h1>section是啥？</h1>
+        <article>
+        <h2>关于section</h1>
+        <p>section的介绍</p>
+        <section>
+        <h3>关于其他</h3>
+        <p>关于其他section的介绍</p>
+        </section>
+        </article>
         </section>
 section使用注意：
 ------------------------
@@ -259,51 +258,51 @@ article元素最容易跟section和div容易混淆，其实article代表一个�
 好区分article、section、div。
 一篇简单文章的article示例代码:
         <article>
-            <h1>一篇文章</h1>
-            <p>文章内容..</p>
-            <footer>
-                <p><small>版权：html5jscss网所属，作者：小北</small></p>
-            </footer>
+        <h1>一篇文章</h1>
+        <p>文章内容..</p>
+        <footer>
+        <p><small>版权：html5jscss网所属，作者：小北</small></p>
+        </footer>
         </article>
 上例是最好简单的article标签使用情况，如果在article内部再嵌套article，那就代表内嵌的article是与它外部的内容有关
 联的，如博客文章下面的评论，如下：
         <article>
-            <header>
-                <h1>一篇文章</h1>
-                <p><time pubdate datetime="2012-10-03">2012/10/03</time></p>
-            </header>
-            <p>文章内容..</p>
-            <article>
-                <h2>评论</h2>
-                <article>
-                    <header>
-                        <h3>评论者: XXX</h3>
-                        <p><time pubdate datetime="2012-10-03T19:10-08:00">~1 hour ago</time></p>
-                    </header>
-                    <p>哈哈哈</p>
-                </article>
-                <article>
-                    <header>
-                        <h3>评论者: XXX</h3>
-                        <p><time pubdate datetime="2012-10-03T19:10-08:00">~1 hour ago</time></p>
-                    </header>
-                    <p>哈？哈？哈？</p>
-                </article>
-            </article>
+        <header>
+        <h1>一篇文章</h1>
+        <p><time pubdate datetime="2012-10-03">2012/10/03</time></p>
+        </header>
+        <p>文章内容..</p>
+        <article>
+        <h2>评论</h2>
+        <article>
+        <header>
+        <h3>评论者: XXX</h3>
+        <p><time pubdate datetime="2012-10-03T19:10-08:00">~1 hour ago</time></p>
+        </header>
+        <p>哈哈哈</p>
+        </article>
+        <article>
+        <header>
+        <h3>评论者: XXX</h3>
+        <p><time pubdate datetime="2012-10-03T19:10-08:00">~1 hour ago</time></p>
+        </header>
+        <p>哈？哈？哈？</p>
+        </article>
+        </article>
         </article>
 文章里的评论，一个article嵌套article来表示的实例
 article内部嵌套article，有可能是评论或其他跟文章有关联的内容。那article内部嵌套section一般是什么情况呢。如下：
         <article>
-            <h1>前端技术</h1>
-            <p>前端技术有那些</p>
-            <section>
-                <h2>CSS</h2>
-                <p>样式..</p>
-            </section>
-            <section>
-                <h2>JS</h2>
-                <p>脚本</p>
-            </section>
+        <h1>前端技术</h1>
+        <p>前端技术有那些</p>
+        <section>
+        <h2>CSS</h2>
+        <p>样式..</p>
+        </section>
+        <section>
+        <h2>JS</h2>
+        <p>脚本</p>
+        </section>
         </article>
 文章里的章节，一个article里的section实例
 因为文章内section部分虽然也是独立的部分，但是它门只能算是组成整体的一部分，从属关系，article是大主体，section是
@@ -312,19 +311,19 @@ article内部嵌套article，有可能是评论或其他跟文章有关联的内
 
 那section内部嵌套article又有哪些情况呢，如下
         <section>
-            <h1>介绍: 网站制作成员配备</h1>
-            <article>
-                <h2>设计师</h2>
-                <p>设计网页的...</p>
-            </article>
-            <article>
-                <h2>程序员</h2>
-                <p>后台写程序的..</p>
-            </article>
-            <article>
-                <h2>前端工程师</h2>
-                <p>给楼上两位打杂的..</p>
-            </article>
+        <h1>介绍: 网站制作成员配备</h1>
+        <article>
+        <h2>设计师</h2>
+        <p>设计网页的...</p>
+        </article>
+        <article>
+        <h2>程序员</h2>
+        <p>后台写程序的..</p>
+        </article>
+        <article>
+        <h2>前端工程师</h2>
+        <p>给楼上两位打杂的..</p>
+        </article>
         </section>
 一个section里的article实例
 设计师、程序员、前端工程师都是一个独立的整体，他们组成了网站制作基本配备，当然还有其他成员~~。设计师、程序员、
