@@ -29,12 +29,12 @@ html标签语义化：
 \<Hx\>
 ------------------------
         <h1>、<h2>、<h3>、<h4>、<h5>、<h6>,作为标题使用，并且依据重要性递减。<h1>是最高的等级。
-例如:
+例如:<br />
 
-CODE:
+CODE:<br />
         \<h1\>文档标题<\/h1\>
         \<h2\>次级标题\</h2\>
-而不要使用
+而不要使用<br />
         \<div class="title"\>文档标题\</div\>，或者\<span class="title"\>文档标题\</span\>.
         很明显搜索引擎对于后者是不会认为他是标题的。
 \<p\>
@@ -49,17 +49,16 @@ CODE:
 <ul>无序列表，很常见的到了大家广泛的使用，<ol>有序列表也挺常用。在web标准化过程中，<ul>还被更多的用于导航条，本
 来导航条就是个列表，这样做是完全正确的，而且当你的浏览器不支持CSS的时候，导航链接仍然很好使，就是美观方面差了一
 点。
-
 \<dl\>、\<dt\>、\<dd\>
 ------------------------
 dl就是“定义列表”。比如说词典里面的词的解释、定义就可以用这种列表。
-例如：
-CODE:
+例如：<br />
+CODE:<br />
         \<dl\>        
         \<dt\>Dog\</dt\>        
         \<dd\>A carnivorous mammal of the family Canidae.\</dd\>        
         \</dl\>
-CODE:
+CODE:<br />
         \<dl\>
         \<dt\>上海滩\</dt\>            
         \<dd\>
@@ -72,49 +71,44 @@ CODE:
         风衣墨镜、冷血双枪、阳光微笑，都封存胶片之中，当我们回首寻望的时候，发哥已被刻为一个时代的坐标。
         \</dd\>
         \</dl\>
-
 \<cite\>、cite 、\<q\>、 \<blockquote\>
 ------------------------
-论坛和blog经常会用到引用别人的话，用<q>来标记简短的单行引用。Web浏览器会自动识别在<q> 
-之间的内容。不幸的是，IE不能识别，并且有些时候， <q>会引起一些可访问性(Accessibility)
-的问题。正因为如此，一些人建议尽量不要使用 <q>,手动的插入引用标记。在一个包含适当的类的 <span>
+论坛和blog经常会用到引用别人的话，用\<q\>来标记简短的单行引用。Web浏览器会自动识别在\<q\> 
+之间的内容。不幸的是，IE不能识别，并且有些时候， \<q\>会引起一些可访问性(Accessibility)
+的问题。正因为如此，一些人建议尽量不要使用 \<q\>,手动的插入引用标记。在一个包含适当的类的 \<span\>
 中加入单行的引用内容，那么就可以用CSS来给引用设计样式了，但是这个没有语义上的意义。 您可以读读Mark 
-Pilgrim写的The Q tag  (http://diveintomark.org/archives/2002/05/04/the_q_tag )关于处理<q>相关问题的看法。
-对于那些一段或者好几段的长篇引用，就应当使用 <blockquote>
-了。CSS可以用来定义引用的样式。注意，一段文章是不可以直接放在<blockquote>
-中的，引用的内容还必须包含在一个元素中，通常是<p>。属性cite既可以与<q> 一起用，也可以与<blockquote>
-一起用，用来提供引用内容的来源地址。需要注意的是，如果你使用 <span>来代替 <q>标记引用内容,那么你就不能使用 
-cite属性了。例如:
-
-CODE:
+Pilgrim写的The Q tag  (http://diveintomark.org/archives/2002/05/04/the_q_tag )关于处理\<q\>相关问题的看法。
+对于那些一段或者好几段的长篇引用，就应当使用 \<blockquote\>
+了。CSS可以用来定义引用的样式。注意，一段文章是不可以直接放在\<blockquote\>
+中的，引用的内容还必须包含在一个元素中，通常是\<p\>。属性cite既可以与\<q\> 一起用，也可以与\<blockquote\>
+一起用，用来提供引用内容的来源地址。需要注意的是，如果你使用 \<span\>来代替 \<q\>标记引用内容,那么你就不能使用 
+cite属性了。例如:<br />
+CODE:<br />
         \<cite\>Designing with Web Standards\</cite\> is an excellent book by Jeffrey Zeldman.
-
-CODE:
+CODE:<br />
         \<p\> \<cite\>孔子\</cite\>曰：\<q\>学而不思则罔，思而不学则殆\</q\>.\</p\>
-
-CODE:
-        \<p\>The W3C says that \<q cite="http://www.w3.org/TR/REC-html40/ \<br>      
-        struct/text.html#h-9.2.1"\>The presentation of phrase elements  \<br>         
-        depends on the user agent.\</q\>.\</p\>        
-
-CODE:
-        <blockquote cite="http://www.w3cn.org/">        
-        <p>&#8220;我们大部分人都有深刻体验，每当主流浏览器版本的升级，我们刚建立的网站就可能变得过时，   
+CODE:<br />
+        \<p\>The W3C says that \<q cite="http://www.w3.org/TR/REC-html40/      
+        struct/text.html#h-9.2.1"\>The presentation of phrase elements      
+        depends on the user agent.\</q\>.\</p\>
+CODE:<br />
+        \<blockquote cite="http://www.w3cn.org/"\>
+        \<p\>&#8220;我们大部分人都有深刻体验，每当主流浏览器版本的升级，我们刚建立的网站就可能变得过时，   
         我们就需要升级或者重新建造一遍网站。例如1996-1999年典型的"浏览器大战"，        
         为了兼容 Netscape 和 IE，网站不得不为这两种浏览器写不同的代码。同样的，
         每当新的网络技术和交互设备的出现，我们也需要制作一个新版本来支持这种新技术或新设备，
         例如支持手机上网的 WAP 技术。类似的问题举不胜举：网站代码臃肿、繁杂浪费了我们大量的带宽；
         针对某种浏览器的 DHTML 特效，屏蔽了部分潜在的客户；不易用的代码，残障人士无法浏览网站等等。
-        这是一种恶性循环，是一种巨大的浪费。&#8221;</p>
-        </blockquote>
+        这是一种恶性循环，是一种巨大的浪费。&#8221;\</p\>
+        \</blockquote\>
 \<em\>、 \<strong\>
 ------------------------
 \<em\> 是用作强调的，\<strong\>是用作重点强调的。 大部分浏览器用斜体显示强调的内容，用粗体来显示重点强调的内容，然
 而，这是没有必要的，如果是为了确定强调内容的显示方式，最好的方法就是使用CSS来定义他们的表现。当你想要的只是视觉
 上的效果时，就不要使用强调了。而且如果你想要强调但是还觉得粗体或者斜体不视觉效果没那么好，特别是斜体对于中文来
 说，那么你完全可以定义一些其他的比较醒目的样式达到强调的效果。
-例如:
-CODE:
+例如:<br />
+CODE:<br />
         \<p\>\<em\>强调\</em\> 的文本通常用斜体显示，
         然而， \<strong\>特别强调\</strong\> 的文本通常以粗体显示。\</p\>
         \<ins\>, \<del\>    知道del，就不要再用\<s\>做删除线了，用del显然更具有语义化。而且del还带有cite和datetime来表明删除
@@ -151,7 +145,7 @@ W3C定义了这些语义标签，不可能完全符合我们有时的设计目�
 header 元素代表“网页”或“section”的页眉。
 通常包含h1-h6元素或hgroup，作为整个页面或者一个内容块的标题。也可以包裹一节的目录部分，一个搜索框，一个nav，或
 者任何相关logo。
-整个页面没有限制header元素的个数，可以拥有多个，可以为每个内容块增加一个header元素
+整个页面没有限制header元素的个数，可以拥有多个，可以为每个内容块增加一个header元素<br />
         \<header\>
         \<hgroup\>
         \<h1\>网站标题\</h1\>
@@ -165,7 +159,7 @@ header 元素代表“网页”或“section”的页眉。
 ### footer元素
 footer元素代表“网页”或“section”的页脚，通常含有该节的一些基本信息，譬如：作者，相关文档链接，版权资料。如果foot
 er元素包含了整个节，那么它们就代表附录，索引，提拔，许可协议，标签，类别等一些其他类似信息。
-footer的示例代码
+footer的示例代码 <br />
         \<footer\>
         COPYRIGHT@小北
         \</footer\>
@@ -175,18 +169,18 @@ footer的示例代码
 ### hgroup元素
 hgroup元素代表“网页”或“section”的标题，当元素有多个层级时，该元素可以将h1到h6元素放在其内，譬如文章的主标题和副
 标题的组合
-hgroup示例代码
+hgroup示例代码<br />
         \<hgroup\>
         \<h1\>这是一篇介绍HTML 5语义化标签和更简洁的结构\</h1\>
         \<h2\>HTML5\</h2\>
         \</hgroup\>
-### hgroup使用注意：
+### hgroup使用注意：<br />
 如果只需要一个h1-h6标签就不用hgroup
 如果有连续多个h1-h6标签就用hgroup
 如果有连续多个标题和其他文章数据，h1-h6标签就用hgroup包住，和其他文章元数据一起放入header标签
 ### nav元素
 nav元素代表页面的导航链接区域。用于定义页面的主要导航部分。
-nav实例：
+nav实例：<br />
         \<nav\>
         \<ul\>
         \<li\>HTML5\</li\>
@@ -204,7 +198,7 @@ aside元素被包含在article元素中作为主要内容的附属信息部分�
 解释等。（特殊的section）
 在article元素之外使用作为页面或站点全局的附属信息部分。最典型的是侧边栏，其中的内容可以是日志串连，其他组的导航
 ，甚至广告，这些内容相关的页面。
-aside实例：
+aside实例：<br />
         \<article\>
         \<p\>内容\</p\>
         \<aside\>
@@ -220,7 +214,7 @@ aside在article内表示主要内容的附属信息，
 section元素代表文档中的“节”或“段”，“段”可以是指一篇文章里按照主题的分段；
 “节”可以是指一个页面里的分组。
 section通常还带标题，虽然html5中section会自动给标题h1-h6降级，但是最好手动给他们降级。如下：
-section示例代码：
+section示例代码：<br />
         \<section\>
         \<h1\>section是啥？\</h1\>
         \<article\>
@@ -232,7 +226,7 @@ section示例代码：
         \</section\>
         \</article\>
         \</section\>
-### section使用注意：
+### section使用注意：<br />
 一张页面可以用section划分为简介、文章条目和联系信息。不过在文章内页，最好用article。section不是一般意义上的容器
 元素，如果想作为样式展示和脚本的便利，可以用div。
 表示文档中的节或者段；
@@ -243,16 +237,16 @@ article元素最容易跟section和div容易混淆，其实article代表一个�
 让开发者独立开发或重用。譬如论坛的帖子，博客上的文章，一篇用户的评论，一个互动的widget小工具。（特殊的section）
 除了它的内容，article会有一个标题（通常会在header里），会有一个footer页脚。我们举几个例子介绍一下article，好更
 好区分article、section、div。
-一篇简单文章的article示例代码:
+一篇简单文章的article示例代码:<br />
         \<article\>
         \<h1\>一篇文章\</h1\>
         \<p\>文章内容..\</p\>
         \<footer\>
         \<p\>\<small\>版权：html5jscss网所属，作者：小北\</small\>\</p\>
         \</footer\>
-        \</article\>
+        \</article\><br />
 上例是最好简单的article标签使用情况，如果在article内部再嵌套article，那就代表内嵌的article是与它外部的内容有关
-联的，如博客文章下面的评论，如下：
+联的，如博客文章下面的评论，如下：<br />
         \<article\>
         \<header\>
         \<h1\>一篇文章\</h1\>
@@ -276,9 +270,9 @@ article元素最容易跟section和div容易混淆，其实article代表一个�
         \<p\>哈？哈？哈？\</p\>
         \</article\>
         \</article\>
-        \</article\>
-文章里的评论，一个article嵌套article来表示的实例
-article内部嵌套article，有可能是评论或其他跟文章有关联的内容。那article内部嵌套section一般是什么情况呢。如下：
+        \</article\><br />
+文章里的评论，一个article嵌套article来表示的实例<br />
+article内部嵌套article，有可能是评论或其他跟文章有关联的内容。那article内部嵌套section一般是什么情况呢。如下：<br />
         \<article\>
         \<h1\>前端技术\</h1\>
         \<p\>前端技术有那些\</p\>
@@ -290,13 +284,13 @@ article内部嵌套article，有可能是评论或其他跟文章有关联的内
         \<h2\>JS\</h2\>
         \<p\>脚本\</p\>
         \</section\>
-        \</article\>
+        \</article\><br />
 文章里的章节，一个article里的section实例
 因为文章内section部分虽然也是独立的部分，但是它门只能算是组成整体的一部分，从属关系，article是大主体，section是
 构成这个大主体的一部分。本网站的全部文章都是article嵌套一个个section章节，这样能让浏览器更容易区分各个章节所包
 括的内容。
 
-那section内部嵌套article又有哪些情况呢，如下
+那section内部嵌套article又有哪些情况呢，如下<br />
         \<section\>
         \<h1\>介绍: 网站制作成员配备\</h1\>
         \<article\>
@@ -312,14 +306,14 @@ article内部嵌套article，有可能是评论或其他跟文章有关联的内
         \<p\>给楼上两位打杂的..\</p\>
         \</article\>
         \</section\>
-一个section里的article实例
+一个section里的article实例<br />
 设计师、程序员、前端工程师都是一个独立的整体，他们组成了网站制作基本配备，当然还有其他成员~~。设计师、程序员、
 前端工程师就像article，是一个个独立的整体，而section将这些自成一体的article包裹，就组成了一个团体。
 
 article和section和例子就例举这么多了，具体情况具体分析，不易深究。漏了divd，其实div就是只是想用来把元素组合或者
 给它们加样式时使用。
 
-### article使用注意：
+### article使用注意：<br />
 
 自身独立的情况下：用article
 是相关内容：用section
