@@ -28,25 +28,24 @@ html标签语义化：
 
 \<Hx\>
 ------------------------
-        <h1>、<h2>、<h3>、<h4>、<h5>、<h6>,作为标题使用，并且依据重要性递减。<h1>是最高的等级。
+    <h1>、<h2>、<h3>、<h4>、<h5>、<h6>,作为标题使用，并且依据重要性递减。<h1>是最高的等级。
 例如:<br />
 
 CODE:<br />
-        \<h1\>文档标题<\/h1\>
-        \<h2\>次级标题\</h2\>
+    <h1>文档标题</h1>
+    <h2>次级标题</h2>
 而不要使用<br />
-        \<div class="title"\>文档标题\</div\>，或者\<span class="title"\>文档标题\</span\>.
-        很明显搜索引擎对于后者是不会认为他是标题的。
+    <div class="title">文档标题</div>，或者<span class="title">文档标题</span>.
+很明显搜索引擎对于后者是不会认为他是标题的。
 \<p\>
 ------------------------
-段落标记，知道了<p>作为段落，你就不会再使用<br/>来换行了，而且不需要<br/><br/>来区分段落与段落。<p></p>
-中的文字会自动换行，而且换行的效果优于<br>
+段落标记，知道了\<p\>作为段落，你就不会再使用\<br/\>来换行了，而且不需要\<br/\>\<br/\>来区分段落与段落。\<p\>\</p\>中的文字会自动换行，而且换行的效果优于\<br\>
 。段落与段落之间的空隙也可以利用CSS来控制，很容易而且清晰的区分出段落与段落。在利用行高(line-height)
 很容易的定义出行间距，再定义首字下沉等效果，那就挺完美了。
 
 \<ul\>、\<ol\>、\<li\>
 ------------------------
-<ul>无序列表，很常见的到了大家广泛的使用，<ol>有序列表也挺常用。在web标准化过程中，<ul>还被更多的用于导航条，本
+\<ul\>无序列表，很常见的到了大家广泛的使用，\<ol\>有序列表也挺常用。在web标准化过程中，\<ul\>还被更多的用于导航条，本
 来导航条就是个列表，这样做是完全正确的，而且当你的浏览器不支持CSS的时候，导航链接仍然很好使，就是美观方面差了一
 点。
 \<dl\>、\<dt\>、\<dd\>
@@ -54,23 +53,23 @@ CODE:<br />
 dl就是“定义列表”。比如说词典里面的词的解释、定义就可以用这种列表。
 例如：<br />
 CODE:<br />
-        \<dl\>        
-        \<dt\>Dog\</dt\>        
-        \<dd\>A carnivorous mammal of the family Canidae.\</dd\>        
-        \</dl\>
+    \<dl\>        
+    \<dt\>Dog\</dt\>        
+    \<dd\>A carnivorous mammal of the family Canidae.\</dd\>        
+    \</dl\>
 CODE:<br />
-        \<dl\>
-        \<dt\>上海滩\</dt\>            
-        \<dd\>
-        这部拍摄于1980年的《上海滩》堪称是香港电视史上最成功、最经典的剧集。            
-        当年在香港播出以后，产生了巨大的轰动效应。
-        \</dd\>            
-        \<dt\>周润发\</dt\>            
-        \<dd\>
-        和所有伟大的影星一样，周润发印证了一个时代，一个香港电影的黄金时代。            
-        风衣墨镜、冷血双枪、阳光微笑，都封存胶片之中，当我们回首寻望的时候，发哥已被刻为一个时代的坐标。
-        \</dd\>
-        \</dl\>
+    \<dl\>
+    \<dt\>上海滩\</dt\>            
+    \<dd\>
+    这部拍摄于1980年的《上海滩》堪称是香港电视史上最成功、最经典的剧集。            
+    当年在香港播出以后，产生了巨大的轰动效应。
+    \</dd\>            
+    \<dt\>周润发\</dt\>            
+    \<dd\>
+    和所有伟大的影星一样，周润发印证了一个时代，一个香港电影的黄金时代。            
+    风衣墨镜、冷血双枪、阳光微笑，都封存胶片之中，当我们回首寻望的时候，发哥已被刻为一个时代的坐标。
+    \</dd\>
+    \</dl\>
 \<cite\>、cite 、\<q\>、 \<blockquote\>
 ------------------------
 论坛和blog经常会用到引用别人的话，用\<q\>来标记简短的单行引用。Web浏览器会自动识别在\<q\> 
@@ -84,23 +83,23 @@ Pilgrim写的The Q tag  (http://diveintomark.org/archives/2002/05/04/the_q_tag )
 一起用，用来提供引用内容的来源地址。需要注意的是，如果你使用 \<span\>来代替 \<q\>标记引用内容,那么你就不能使用 
 cite属性了。例如:<br />
 CODE:<br />
-        \<cite\>Designing with Web Standards\</cite\> is an excellent book by Jeffrey Zeldman.
+    \<cite\>Designing with Web Standards\</cite\> is an excellent book by Jeffrey Zeldman.
 CODE:<br />
-        \<p\> \<cite\>孔子\</cite\>曰：\<q\>学而不思则罔，思而不学则殆\</q\>.\</p\>
+    \<p\> \<cite\>孔子\</cite\>曰：\<q\>学而不思则罔，思而不学则殆\</q\>.\</p\>
 CODE:<br />
-        \<p\>The W3C says that \<q cite="http://www.w3.org/TR/REC-html40/      
-        struct/text.html#h-9.2.1"\>The presentation of phrase elements      
-        depends on the user agent.\</q\>.\</p\>
+    \<p\>The W3C says that \<q cite="http://www.w3.org/TR/REC-html40/      
+    struct/text.html#h-9.2.1"\>The presentation of phrase elements      
+    depends on the user agent.\</q\>.\</p\>
 CODE:<br />
-        \<blockquote cite="http://www.w3cn.org/"\>
-        \<p\>&#8220;我们大部分人都有深刻体验，每当主流浏览器版本的升级，我们刚建立的网站就可能变得过时，   
+    \<blockquote cite="http://www.w3cn.org/"\>
+    \<p\>&#8220;我们大部分人都有深刻体验，每当主流浏览器版本的升级，我们刚建立的网站就可能变得过时，   
         我们就需要升级或者重新建造一遍网站。例如1996-1999年典型的"浏览器大战"，        
         为了兼容 Netscape 和 IE，网站不得不为这两种浏览器写不同的代码。同样的，
         每当新的网络技术和交互设备的出现，我们也需要制作一个新版本来支持这种新技术或新设备，
         例如支持手机上网的 WAP 技术。类似的问题举不胜举：网站代码臃肿、繁杂浪费了我们大量的带宽；
         针对某种浏览器的 DHTML 特效，屏蔽了部分潜在的客户；不易用的代码，残障人士无法浏览网站等等。
         这是一种恶性循环，是一种巨大的浪费。&#8221;\</p\>
-        \</blockquote\>
+    \</blockquote\>
 \<em\>、 \<strong\>
 ------------------------
 \<em\> 是用作强调的，\<strong\>是用作重点强调的。 大部分浏览器用斜体显示强调的内容，用粗体来显示重点强调的内容，然
@@ -109,10 +108,10 @@ CODE:<br />
 说，那么你完全可以定义一些其他的比较醒目的样式达到强调的效果。
 例如:<br />
 CODE:<br />
-        \<p\>\<em\>强调\</em\> 的文本通常用斜体显示，
-        然而， \<strong\>特别强调\</strong\> 的文本通常以粗体显示。\</p\>
-        \<ins\>, \<del\>    知道del，就不要再用\<s\>做删除线了，用del显然更具有语义化。而且del还带有cite和datetime来表明删除
-        的原因以及删除的时间。ins是表示插入，也有这样的属性。
+    \<p\>\<em\>强调\</em\> 的文本通常用斜体显示，
+    然而， \<strong\>特别强调\</strong\> 的文本通常以粗体显示。\</p\>
+    \<ins\>, \<del\>    知道del，就不要再用\<s\>做删除线了，用del显然更具有语义化。而且del还带有cite和datetime来表明删除
+    的原因以及删除的时间。ins是表示插入，也有这样的属性。
 \<table\>、\<td\>、\<th\>、\<caption\>、 summary
 ------------------------
 
@@ -146,12 +145,12 @@ header 元素代表“网页”或“section”的页眉。
 通常包含h1-h6元素或hgroup，作为整个页面或者一个内容块的标题。也可以包裹一节的目录部分，一个搜索框，一个nav，或
 者任何相关logo。
 整个页面没有限制header元素的个数，可以拥有多个，可以为每个内容块增加一个header元素<br />
-        \<header\>
-        \<hgroup\>
-        \<h1\>网站标题\</h1\>
-        \<h1\>网站副标题\</h1\>
-        \</hgroup\>
-        \</header\>
+    \<header\>
+    \<hgroup\>
+    \<h1\>网站标题\</h1\>
+    \<h1\>网站副标题\</h1\>
+    \</hgroup\>
+    \</header\>
 ### header使用注意：
 可以是“网页”或任意“section”的头部部分；
 没有个数限制。
@@ -160,9 +159,9 @@ header 元素代表“网页”或“section”的页眉。
 footer元素代表“网页”或“section”的页脚，通常含有该节的一些基本信息，譬如：作者，相关文档链接，版权资料。如果foot
 er元素包含了整个节，那么它们就代表附录，索引，提拔，许可协议，标签，类别等一些其他类似信息。
 footer的示例代码 <br />
-        \<footer\>
-        COPYRIGHT@小北
-        \</footer\>
+    \<footer\>
+    COPYRIGHT@小北
+    \</footer\>
 ### footer使用注意：
 可以是“网页”或任意“section”的底部部分；
 没有个数限制，除了包裹的内容不一样，其他跟header类似。
@@ -170,10 +169,10 @@ footer的示例代码 <br />
 hgroup元素代表“网页”或“section”的标题，当元素有多个层级时，该元素可以将h1到h6元素放在其内，譬如文章的主标题和副
 标题的组合
 hgroup示例代码<br />
-        \<hgroup\>
-        \<h1\>这是一篇介绍HTML 5语义化标签和更简洁的结构\</h1\>
-        \<h2\>HTML5\</h2\>
-        \</hgroup\>
+    \<hgroup\>
+    \<h1\>这是一篇介绍HTML 5语义化标签和更简洁的结构\</h1\>
+    \<h2\>HTML5\</h2\>
+    \</hgroup\>
 ### hgroup使用注意：<br />
 如果只需要一个h1-h6标签就不用hgroup
 如果有连续多个h1-h6标签就用hgroup
@@ -181,13 +180,13 @@ hgroup示例代码<br />
 ### nav元素
 nav元素代表页面的导航链接区域。用于定义页面的主要导航部分。
 nav实例：<br />
-        \<nav\>
-        \<ul\>
-        \<li\>HTML5\</li\>
-        \<li\>CSS3\</li\>
-        \<li\>JavaScript\</li\>
-        \</ul\>
-        \</nav\>
+    \<nav\>
+    \<ul\>
+    \<li\>HTML5\</li\>
+    \<li\>CSS3\</li\>
+    \<li\>JavaScript\</li\>
+    \</ul\>
+    \</nav\>
 但是我在有些时候却情不自禁的想用它，譬如：侧边栏上目录，面包屑导航，搜索样式，或者下一篇上一篇文章，但是事实上
 规范上说nav只能用在页面主要导航部分上。页脚区域中的链接列表，虽然指向不同网站的不同区域，譬如服务条款，版权页等
 ，这些footer元素就能够用了。
@@ -199,13 +198,13 @@ aside元素被包含在article元素中作为主要内容的附属信息部分�
 在article元素之外使用作为页面或站点全局的附属信息部分。最典型的是侧边栏，其中的内容可以是日志串连，其他组的导航
 ，甚至广告，这些内容相关的页面。
 aside实例：<br />
-        \<article\>
-        \<p\>内容\</p\>
-        \<aside\>
-        \<h1\>作者简介\</h1\>
-        \<p\>小北，前端一枚\</p\>
-        \</aside\>
-        \</article\>
+    \<article\>
+    \<p\>内容\</p\>
+    \<aside\>
+    \<h1\>作者简介\</h1\>
+    \<p\>小北，前端一枚\</p\>
+    \</aside\>
+    \</article\>
 ### aside使用总结：
 aside在article内表示主要内容的附属信息，
 在article之外则可做侧边栏，没有article与之对应，最好不用。
@@ -215,17 +214,17 @@ section元素代表文档中的“节”或“段”，“段”可以是指一�
 “节”可以是指一个页面里的分组。
 section通常还带标题，虽然html5中section会自动给标题h1-h6降级，但是最好手动给他们降级。如下：
 section示例代码：<br />
-        \<section\>
-        \<h1\>section是啥？\</h1\>
-        \<article\>
-        \<h2\>关于section\</h1\>
-        \<p\>section的介绍\</p\>
-        \<section\>
-        \<h3\>关于其他\</h3\>
-        \<p\>关于其他section的介绍\</p\>
-        \</section\>
-        \</article\>
-        \</section\>
+    \<section\>
+    \<h1\>section是啥？\</h1\>
+    \<article\>
+    \<h2\>关于section\</h1\>
+    \<p\>section的介绍\</p\>
+    \<section\>
+    \<h3\>关于其他\</h3\>
+    \<p\>关于其他section的介绍\</p\>
+    \</section\>
+    \</article\>
+    \</section\>
 ### section使用注意：<br />
 一张页面可以用section划分为简介、文章条目和联系信息。不过在文章内页，最好用article。section不是一般意义上的容器
 元素，如果想作为样式展示和脚本的便利，可以用div。
@@ -238,74 +237,74 @@ article元素最容易跟section和div容易混淆，其实article代表一个�
 除了它的内容，article会有一个标题（通常会在header里），会有一个footer页脚。我们举几个例子介绍一下article，好更
 好区分article、section、div。
 一篇简单文章的article示例代码:<br />
-        \<article\>
-        \<h1\>一篇文章\</h1\>
-        \<p\>文章内容..\</p\>
-        \<footer\>
-        \<p\>\<small\>版权：html5jscss网所属，作者：小北\</small\>\</p\>
-        \</footer\>
-        \</article\><br />
+    \<article\>
+    \<h1\>一篇文章\</h1\>
+    \<p\>文章内容..\</p\>
+    \<footer\>
+    \<p\>\<small\>版权：html5jscss网所属，作者：小北\</small\>\</p\>
+    \</footer\>
+    \</article\><br />
 上例是最好简单的article标签使用情况，如果在article内部再嵌套article，那就代表内嵌的article是与它外部的内容有关
 联的，如博客文章下面的评论，如下：<br />
-        \<article\>
-        \<header\>
-        \<h1\>一篇文章\</h1\>
-        \<p\>\<time pubdate datetime="2012-10-03"\>2012/10/03\</time\>\</p\>
-        \</header\>
-        \<p\>文章内容..\</p\>
-        \<article\>
-        \<h2\>评论\</h2\>
-        \<article\>
-        \<header\>
-        \<h3\>评论者: XXX\</h3\>
-        \<p\>\<time pubdate datetime="2012-10-03T19:10-08:00"\>~1 hour ago\</time\>\</p\>
-        \</header\>
-        \<p\>哈哈哈\</p\>
-        \</article\>
-        \<article\>
-        \<header\>
-        \<h3\>评论者: XXX\</h3\>
-        \<p\>\<time pubdate datetime="2012-10-03T19:10-08:00"\>~1 hour ago\</time\>\</p\>
-        \</header\>
-        \<p\>哈？哈？哈？\</p\>
-        \</article\>
-        \</article\>
-        \</article\><br />
+    \<article\>
+    \<header\>
+    \<h1\>一篇文章\</h1\>
+    \<p\>\<time pubdate datetime="2012-10-03"\>2012/10/03\</time\>\</p\>
+    \</header\>
+    \<p\>文章内容..\</p\>
+    \<article\>
+    \<h2\>评论\</h2\>
+    \<article\>
+    \<header\>
+    \<h3\>评论者: XXX\</h3\>
+    \<p\>\<time pubdate datetime="2012-10-03T19:10-08:00"\>~1 hour ago\</time\>\</p\>
+    \</header\>
+    \<p\>哈哈哈\</p\>
+    \</article\>
+    \<article\>
+    \<header\>
+    \<h3\>评论者: XXX\</h3\>
+    \<p\>\<time pubdate datetime="2012-10-03T19:10-08:00"\>~1 hour ago\</time\>\</p\>
+    \</header\>
+    \<p\>哈？哈？哈？\</p\>
+    \</article\>
+    \</article\>
+    \</article\>
 文章里的评论，一个article嵌套article来表示的实例<br />
 article内部嵌套article，有可能是评论或其他跟文章有关联的内容。那article内部嵌套section一般是什么情况呢。如下：<br />
-        \<article\>
-        \<h1\>前端技术\</h1\>
-        \<p\>前端技术有那些\</p\>
-        \<section\>
-        \<h2\>CSS\</h2\>
-        \<p\>样式..\</p\>
-        \</section\>
-        \<section\>
-        \<h2\>JS\</h2\>
-        \<p\>脚本\</p\>
-        \</section\>
-        \</article\><br />
+    \<article\>
+    \<h1\>前端技术\</h1\>
+    \<p\>前端技术有那些\</p\>
+    \<section\>
+    \<h2\>CSS\</h2\>
+    \<p\>样式..\</p\>
+    \</section\>
+    \<section\>
+    \<h2\>JS\</h2\>
+    \<p\>脚本\</p\>
+    \</section\>
+    \</article\><br />
 文章里的章节，一个article里的section实例
 因为文章内section部分虽然也是独立的部分，但是它门只能算是组成整体的一部分，从属关系，article是大主体，section是
 构成这个大主体的一部分。本网站的全部文章都是article嵌套一个个section章节，这样能让浏览器更容易区分各个章节所包
 括的内容。
 
 那section内部嵌套article又有哪些情况呢，如下<br />
-        \<section\>
-        \<h1\>介绍: 网站制作成员配备\</h1\>
-        \<article\>
-        \<h2\>设计师\</h2\>
-        \<p\>设计网页的...\</p\>
-        \</article\>
-        \<article\>
-        \<h2\>程序员\</h2\>
-        \<p\>后台写程序的..\</p\>
-        \</article\>
-        \<article\>
-        \<h2\>前端工程师\</h2\>
-        \<p\>给楼上两位打杂的..\</p\>
-        \</article\>
-        \</section\>
+    \<section\>
+    \<h1\>介绍: 网站制作成员配备\</h1\>
+    \<article\>
+    \<h2\>设计师\</h2\>
+    \<p\>设计网页的...\</p\>
+    \</article\>
+    \<article\>
+    \<h2\>程序员\</h2\>
+    \<p\>后台写程序的..\</p\>
+    \</article\>
+    \<article\>
+    \<h2\>前端工程师\</h2\>
+    \<p\>给楼上两位打杂的..\</p\>
+    \</article\>
+    \</section\>
 一个section里的article实例<br />
 设计师、程序员、前端工程师都是一个独立的整体，他们组成了网站制作基本配备，当然还有其他成员~~。设计师、程序员、
 前端工程师就像article，是一个个独立的整体，而section将这些自成一体的article包裹，就组成了一个团体。
